@@ -74,7 +74,7 @@ class FloatingPanel: NSObject, UIGestureRecognizerDelegate, UIScrollViewDelegate
         panGestureRecognizer = FloatingPanelPanGestureRecognizer()
 
         if #available(iOS 11.0, *) {
-            panGestureRecognizer.name = "FloatingPanelSurface"
+            panGestureRecognizer.name? = "FloatingPanelSurface"
         }
 
         super.init()
